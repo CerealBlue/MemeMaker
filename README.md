@@ -1,5 +1,5 @@
-MemeMaker `0.1.2`
-<br/><br/>
+MemeMaker<br/>
+`V 0.1.2`<br/><br/>
 MemeMaker is a program that lets you choose a meme from a given set of templates and make a meme out of it. <br/>
 All you have to do is choose the meme and write the words on each of the templates. The formatting is automatically done.<br/>
 <br/>
