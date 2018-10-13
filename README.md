@@ -6,3 +6,4 @@ All you have to do is choose the meme and write the words on each of the templat
 <b>You must have PIL installed (sudo pip3 install pil)</b>
 <br/><br/>
 For now, the only meme template available is the drake template. I'm making a couple of changes so as to make the process easier to make memes and templates. For now, use whatever is there.<br/><br/>
+There are 11 meme templates in the folder. If there are contributors to figure out the pixel called off the areas where text could be inserted, that would be helpful
