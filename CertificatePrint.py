@@ -32,3 +32,15 @@ class Template:
     def getDimensions(self):
         image = Image.open(self.Path)
         self.Dimensions['width'] ,self.Dimensions['height']  = image.size
+
+    def addRect(self, x_TL, y_TL, x_BR, y_BR, color : str):
+        TempImage = 'Tmp'+self.Path
+
+        tmpImg = Image.open(self.Path)
+
+        tmpDraw = ImageDraw.Draw(tmpImg)
+        tmpDraw.Rectangle( xy = ((x_TL, y_TL), (x_BR, y_BR)), outline = color )
+
+        tmpImg.save(TempImage)
+
+        return TempImage
