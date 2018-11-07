@@ -6,3 +6,7 @@ Drive.py
 
 #__pycache__'s
 *.pyc
+
+#Ending of Custom Files
+#POI = Print On Images
+*_POI
