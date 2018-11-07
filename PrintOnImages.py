@@ -9,6 +9,7 @@ except Exception as e:
 class Template:
     def __init__(self):
         self.Name = ''
+        self.saveFile = ''
         self.Path = ''
 
         self.Data = {
@@ -25,6 +26,7 @@ class Template:
 
     def setName(self, name : str):
         self.Name = name
+        self.saveFile = self.Name+"Data_POI"
 
     def setPath(self, path : str):
         self.Path = path
@@ -44,3 +46,16 @@ class Template:
         tmpImg.save(TempImage)
 
         return TempImage
+
+    def savePoint(self):
+        # TODO: add  timestamp and differentiator
+
+        saveData = {
+            'Name' : self.Name,
+            'Path' : self.Path,
+            'Data' : self.Data,
+            'Dimensions' : self.Dimensions
+        }
+
+        with open(self.saveFile, 'w') as FileObj:
+            FileObj.write(str(saveData))
